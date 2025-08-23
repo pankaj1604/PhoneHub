@@ -62,12 +62,30 @@ nav .logo span {
 
 .navLinks ul li {
     list-style: none;
+    position: relative;
 }
 
 .navLinks ul li a {
     color: #1E1E1E;
     font-weight: 500;
+    position: relative;
 }
+
+.linkCont::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background: linear-gradient(#F02731, #FF4750);
+    transition: 0.3s ease-out;
+}
+
+.linkCont:has(.anchorLinks:hover)::after {
+    width: 100%;
+}
+
 
 .navIcons {
     display: flex;
@@ -78,6 +96,45 @@ nav .logo span {
 
 .navIcons img {
     width: 26px;
+    transform: translateY(0);
+    transition: 0.2s;
+}
+
+.navIcons img:hover {
+    transform: translateY(-1px);
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(45deg, #bbb, #ebebeb);
+    border-radius: 12px;
+    padding: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero-text p span {
+    font-size: 36px;
+    font-weight: 700;
+    color: #F02731;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+    margin: 8px 0;
+}
+
+.red-btn {
+    background: linear-gradient(45deg, #F02731, #FF4750);
+    color: #fff;
 }
 
 
@@ -90,4 +147,19 @@ nav .logo span {
 
 a {
     text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 6px;
+    margin-top: 48px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+    font-weight: 500;
+    transform: translateY(0);
+    transition: 0.3s ease-out;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
 }
