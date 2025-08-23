@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* --- Colors --- */
+/*
+
+Red - #F02731
+White - #FFFFFF
+Black - #1E1E1E
+Blue - #136DFF
+Yellow - #FCBF29
+
+Off Red - #FF4750
+Off White - #EBEBEB 
+Off Black - #494949
+Off Yellow - #FFCD51
+Off Blue - #5A99FF
+*/
+
+/* font-family: "Roboto", sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Navbar */
+#navbar {
+    padding: 32px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo a {
+    font-size: 26px;
+    font-weight: 700;
+    color: #F02731;
+}
+
+nav .logo span {
+    color: #1E1E1E;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.navLinks ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.navLinks ul li {
+    list-style: none;
+}
+
+.navLinks ul li a {
+    color: #1E1E1E;
+    font-weight: 500;
+}
+
+.navIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.navIcons img {
+    width: 26px;
+}
+
+
+
+/* --- Utility Classes --- */
+
+.container {
+    margin: 0 64px;
+}
+
+a {
+    text-decoration: none;
+}
