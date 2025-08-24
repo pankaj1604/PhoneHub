@@ -236,6 +236,7 @@ nav .logo span {
     align-items: flex-end;
     border-radius: 12px;
     flex-basis: 48%;
+    position: relative;
 }
 
 .big-service-box {
@@ -246,6 +247,33 @@ nav .logo span {
     display: flex;
     align-items: flex-end;
     border-radius: 12px;
+    position: relative;
+}
+
+.small-service-box img {
+    position: absolute;
+    bottom: 0;
+    right: 16px;
+    width: 150px;
+}
+
+.big-service-box img {
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+    width: 250px;
+}
+
+.box-2 img {
+    width: 170px;
+}
+
+.box-3 img {
+    width: 280px;
+}
+
+.box-5 img {
+    width: 225px;
 }
 
 .box-1 {
@@ -268,6 +296,10 @@ nav .logo span {
     background: linear-gradient(45deg, #136DFF, #5A99FF);
 }
 
+.serivce-text {
+    z-index: 5;
+}
+
 .serivce-text p {
     color: #fff;
     font-weight: 500;
@@ -275,7 +307,7 @@ nav .logo span {
 }
 
 .serivce-text h2 {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.4);
     font-weight: 700;
     font-size: 42px;
 }
