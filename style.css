@@ -40,6 +40,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 6px;
+    width: max-content;
     padding: 10px 16px;
     border-radius: 6px;
     margin-top: 48px;
@@ -136,7 +137,7 @@ nav .logo span {
 
 /* Hero Section */
 .hero {
-    height: 80vh;
+    height: 82vh;
     min-height: 500px;
     background: linear-gradient(45deg, #bbb, #ebebeb);
     border-radius: 12px;
@@ -195,4 +196,107 @@ nav .logo span {
 
 .hero-img img {
     width: 100%;
+}
+
+/* Services Section */
+
+.services-container {
+    padding: 32px 0;
+}
+
+.service-cont-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 26px;
+}
+
+.service-cont-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.small-box-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: 49%;
+}
+
+.small-service-box {
+    flex-basis: 24%;
+    padding: 36px;
+    height: 300px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: flex-end;
+    border-radius: 12px;
+    flex-basis: 48%;
+}
+
+.big-service-box {
+    flex-basis: 49%;
+    padding: 36px;
+    height: 300px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: flex-end;
+    border-radius: 12px;
+}
+
+.box-1 {
+    background: linear-gradient(45deg, #1E1E1E, #494949);
+}
+
+.box-2 {
+    background: linear-gradient(45deg, #FCBF29, #FFCD51);
+}
+
+.box-3 {
+    background: linear-gradient(45deg, #F02731, #FF4750);
+}
+
+.box-4 {
+    background: linear-gradient(45deg, #bbb, #ebebeb);
+}
+
+.box-5 {
+    background: linear-gradient(45deg, #136DFF, #5A99FF);
+}
+
+.serivce-text p {
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.serivce-text h2 {
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 700;
+    font-size: 42px;
+}
+
+.service-btn {
+    padding: 8px 22px;
+    font-size: 14px;
+    margin-top: 28px;
+}
+
+.box-2 .service-btn {
+    background: #fff;
+    color: #FCBF29;
+}
+
+.box-3 .service-btn {
+    background: #fff;
+    color: #F02731;
+}
+
+.box-5 .service-btn {
+    background: #fff;
+    color: #136DFF;
 }
