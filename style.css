@@ -25,6 +25,15 @@ Off Blue - #5A99FF
     font-family: "Montserrat", sans-serif;
 }
 
+img {
+    -webkit-user-drag: none;
+    /* For Webkit browsers like Chrome, Safari */
+    -moz-user-drag: none;
+    /* For Firefox */
+    -ms-user-drag: none;
+    /* For Internet Explorer/Edge */
+}
+
 /* --- Utility Classes --- */
 
 .container {
@@ -362,4 +371,74 @@ nav .logo span {
     font-size: 16px;
     margin-bottom: 6px;
     color: #1E1E1E;
+}
+
+/* Offer Section */
+.offer-container {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 54px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #F02731, #FF4750);
+    border-radius: 12px;
+    color: #fff;
+    position: relative;
+}
+
+.offer-container h4 {
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.offer-container h4 img {
+    width: 32px;
+    margin-right: 4px;
+}
+
+.offer-btn {
+    background: #fff;
+    color: #F02731;
+    padding: 8px 22px;
+    margin-top: 28px;
+}
+
+.offer-box-1 h2 {
+    margin: 8px 0;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.offer-box-1 h2 span {
+    font-size: 54px;
+    line-height: 50px;
+}
+
+.offer-box-2 h3 {
+    font-size: 48px;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+.offer-box-2 p {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+.offer-box-2 p img {
+    width: 26px;
+}
+
+.offer-container>img {
+    width: 350px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
