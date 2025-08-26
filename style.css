@@ -111,6 +111,11 @@ nav .logo span {
     position: relative;
 }
 
+.navLinks ul li .nav-btn {
+    margin: 0;
+    color: #fff;
+}
+
 .linkCont::after {
     content: '';
     position: absolute;
@@ -441,4 +446,142 @@ nav .logo span {
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
+}
+
+/* Top Products Section */
+
+.title-container {
+    margin: 64px 0;
+}
+
+.title {
+    font-size: 32px;
+    color: #1E1E1E;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.sub-title {
+    font-size: 16px;
+    color: #494949;
+    text-align: center;
+    font-weight: 500;
+}
+
+.product-main-cont {
+    padding: 0 25px 32px;
+    position: relative;
+}
+
+.product-inner-cont {
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.product-container {
+    display: flex;
+    width: 200%;
+    /* gap: 16px; */
+    transition: 0.5s;
+    transform: translateX(-12.5%);
+}
+
+.product-arrow {
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(45deg, #F02731, #FF4750);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    z-index: 8;
+}
+
+.product-arrow img {
+    width: 100%;
+}
+
+.prev {
+    left: 0;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.next {
+    right: 0;
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product-box {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+    width: 25%;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 0 16px;
+}
+
+.product-img {
+    width: 100%;
+    height: 250px;
+    background: #ccc;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.product-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-title {
+    font-size: 14px;
+    color: #494949;
+    font-weight: 400;
+}
+
+.product-title h6 {
+    font-size: 20px;
+    color: #1E1E1E;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.product-price {
+    font-size: 20px;
+    color: #1E1E1E;
+    font-weight: 600;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.cut-price {
+    font-size: 14px;
+    color: #494949;
+    font-weight: 400;
+    margin-bottom: 4px;
+    position: relative;
+    width: max-content;
+
+}
+
+.cut-price::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: #F02731;
+}
+
+.product-btn {
+    margin: 32px auto 8px;
+    font-size: 14px;
+    padding: 10px 22px;
 }
