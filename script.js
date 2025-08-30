@@ -17,3 +17,23 @@ prevProduct.addEventListener('click',()=>{
     productCont.style.transform = `translateX(${translateX}%)`;
     
 })
+
+let testimonialCont = document.getElementById('testimonial-cont');
+let nextReview = document.getElementById('testimonial-next-arrow');
+let prevReview = document.getElementById('testimonial-prev-arrow');
+
+let testimonialTransX = 0;
+
+nextReview.addEventListener('click',()=>{
+    if(testimonialTransX > -50){
+    testimonialTransX -= 12.5;
+    testimonialCont.style.transform = `translateX(${testimonialTransX}%)`;
+    }
+})
+
+prevReview.addEventListener('click',()=>{
+    if(testimonialTransX<0)
+    testimonialTransX += 12.5;
+    testimonialCont.style.transform = `translateX(${testimonialTransX}%)`;
+    
+})
